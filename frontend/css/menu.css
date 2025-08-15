@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdfc;
+  text-align: center;
+}
+
+#menu {
+  padding: 20px;
+}
+/* === MENU PAGE SPECIFIC HEADER === */
+.menu-header {
+  background: linear-gradient(90deg, #2a9d8f, #264653);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.menu-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.menu-links a {
+  background: linear-gradient(135deg, #11cbc200, #2575fc);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+  background: linear-gradient(135deg, #f39c12, #d35400);
+  transform: scale(1.05);
+}
+
+.menu-category {
+  padding: 10px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(207, 4, 11, 0);
+  transition: transform 0.3s;
+}
+
+.menu-category:hover {
+  transform: scale(1.05);
+}
+
+.veg {
+  background-color: #4caf50;
+} /* Green for Veg */
+.non-veg {
+  background-color: #d32f2f;
+} /* Red for Non-Veg */
+.soups {
+  background-color: #ff9800;
+} /* Orange for Soups */
+.tiffins {
+  background-color: #673ab7;
+} /* Purple for Tiffins */
+.drinks {
+  background-color: #009688;
+} /* Teal for Drinks */
+
+.two-sided-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  padding: 20px;
+}
+
+.side-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items {
+  text-align: center;
+}
+
+.menu-items h3 {
+  font-size: 2rem;
+  color: #ffeb3b;
+  background: linear-gradient(to right, #8e3838, #4caf50);
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items ul li {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 0;
+  list-style: none;
+}

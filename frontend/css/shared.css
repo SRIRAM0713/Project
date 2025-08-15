@@ -6,38 +6,112 @@
 }
 
 body {
-  font-family: cursive;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   background-color: #f4f4f9;
   color: #333;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-
 /* Header */
 header {
   text-align: center;
   background: linear-gradient(90deg, #2a9d8f, #264653);
   color: white;
-  padding: 30px 0;
+  padding: 40px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Lobster", cursive;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
-/* Footer */
+/* ===== Common Layout & Typography ===== */
+section {
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* ===== General h2 Styling for All Pages ===== */
+h2 {
+  background: linear-gradient(to right, #d32f2f, #ff9800);
+  font-family: "Lobster", cursive;
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 20px auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Global Navigation (Colorful Header Menu) ===== */
+.main-nav {
+  background-color: #ffffff;
+  padding: 15px 0;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+/* Common image style for section images */
+section img {
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Common footer styling */
 footer {
   text-align: center;
   background-color: #264653;
   color: white;
   padding: 20px 0;
-  margin-top: 30px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }

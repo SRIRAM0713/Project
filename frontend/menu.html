@@ -3,46 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Menu - Daawath</title>
     <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="shared.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to Daawath</h1>
-      <nav>
-        <ul>
-          <li><a href="#starters">Starters</a></li>
-          <li><a href="#main-course">Main Course</a></li>
-          <li><a href="#biryani">Biryani</a></li>
-          <li><a href="#soups">Soups</a></li>
-          <li><a href="#tiffins">Tiffins</a></li>
-          <li><a href="#drinks">Drinks</a></li>
-        </ul>
-      </nav>
+    <header class="menu-header">
+      <h1 class="menu-title">Welcome to Daawath</h1>
+      <div class="menu-links">
+        <a href="#starters">Starters</a>
+        <a href="#main-course">Main Course</a>
+        <a href="#biryani">Biryani</a>
+        <a href="#soups">Soups</a>
+        <a href="#tiffins">Tiffins</a>
+        <a href="#drinks">Drinks</a>
+      </div>
     </header>
 
     <section id="menu">
       <!-- Starters -->
       <h2 id="starters">Starters</h2>
-      <div class="menu-category veg">
-        <h3>Vegetarian</h3>
-        <ul>
-          <li>Pani Puri</li>
-          <li>Dahi Puri</li>
-          <li>Veg Spring Rolls</li>
-          <li>Paneer Tikka</li>
-        </ul>
-      </div>
-      <div class="menu-category non-veg">
-        <h3>Non-Vegetarian</h3>
-        <ul>
-          <li>Chicken Tikka</li>
-          <li>Tandoori Chicken</li>
-          <li>Fish Amritsari</li>
-          <li>Mutton Seekh Kebab</li>
-        </ul>
+      <div class="menu-category veg two-sided-layout">
+        <img
+          src="images/Paneer-Tikka.jpg"
+          alt="Veg Dish Left"
+          class="side-img"
+        />
+
+        <div class="menu-items">
+          <h3>Vegetarian</h3>
+          <ul>
+            <li>Pani Puri</li>
+            <li>Dahi Puri</li>
+            <li>Veg Spring Rolls</li>
+            <li>Paneer Tikka</li>
+          </ul>
+        </div>
+
+        <img src="images/panipuri.jpg" alt="Veg Dish Right" class="side-img" />
       </div>
 
+      <div class="menu-category non-veg two-sided-layout">
+        <img
+          src="images/chicken tikka.jpg"
+          alt="non-veg Dish Left"
+          class="side-img"
+        />
+        <div class="menu-items">
+          <h3>Non-Vegetarian</h3>
+          <ul>
+            <li>Chicken Tikka</li>
+            <li>Tandoori Chicken</li>
+            <li>Fish Amritsari</li>
+            <li>Mutton Seekh Kebab</li>
+          </ul>
+        </div>
+
+        <img
+          src="images/Amritsari.jpg"
+          alt="non-veg Dish Right"
+          class="side-img"
+        />
+      </div>
       <!-- Main Course -->
       <h2 id="main-course">Main Course</h2>
       <div class="menu-category veg">
@@ -117,6 +144,9 @@
       </div>
     </section>
 
-    <script src="menu.js"></script>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Daawath. All rights reserved.</p>
+    </footer>
   </body>
 </html>
